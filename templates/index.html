@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">LeasyCode</a>
+        <ul>
+            <li><a href="#exams">Exams</a></li>
+            <li><a href="#lessons">Lessons</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+    </header>
+    <!--Banner-->
+    <section class="banner" id="home">
+        <h2>Easiest Way To Learn <span>Code</span></h2>
+    </section>
+    <!--Exams-->
+    <section class="sec" id="exams">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Exams</h3>
+                <p> Test yourself for becoming better programmer</p>
+                <a href="#" class="btn">Take Exams</a>
+            </div>
+        </div>
+    </section>
+    <!--Lessons-->
+    <section class="sec" id="lessons">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Lessons</h3>
+                <p>Our Lessons</p>
+            </div>
+            <div class="lessons">
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="{% static 'img/python.png' %}">
+                    </div>
+                    <div class="content">
+                        <h2>Python</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed mauris finibus,
+                        pharetra lacus nec, elementum dui.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus. In porttitor dictum commodo
+                        </p>
+                </div>
+            </div>
+            <div class="lessons">
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="{% static 'img/javascript.png' %}">
+                    </div>
+                    <div class="content">
+                        <h2>JavaScript</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed mauris finibus,
+                        pharetra lacus nec, elementum dui.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus. In porttitor dictum commodo
+                        </p>
+                    </div>
+                </div>
+            </div> 
+            <div class="lessons">
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="{% static 'img/hashtag.png' %}">
+                    </div>
+                    <div class="content">
+                        <h2>C#</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed mauris finibus,
+                        pharetra lacus nec, elementum dui.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus. In porttitor dictum commodo
+                        </p>
+                    </div>
+                </div>
+            
+            </div>                     
+        </div>
+    </section>
+    <!--News-->
+    <section class="sec news" id="news">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>News</h3>
+                <p>News about LeasyCode and Programming</p>
+                <a href="#" class="btn-black">News</a>
+            </div>
+        </div>
+    </section>
+    <!--Download-->
+    <section class="sec" id="download">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Download LeasyCode</h3>
+            </div>
+            <div class="lessons">
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="{% static 'img/windows.png' %}">
+                    </div>
+                    <div class="content">
+                        <h2>Download For Windows</h2>
+                        <a href="#" class="btn">Download</a>
+                </div>
+            </div>
+            <div class="lessons">
+                <div class="box">
+                    <div class="iconBx">
+                        <img src="{% static 'img/android.png' %}">
+                    </div>
+                    <div class="content">
+                        <h2>Download For Android</h2>
+                        <a href="#" class="btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+ 
+
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>
